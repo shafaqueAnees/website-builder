@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    height: 40px;
+    margin: 30px 40px; 
+}
+#navbar{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+display: flex;
+font-family: Arial, Helvetica, sans-serif;
+}
+#navbar ul li{
+ list-style: none;
+ font-size: 1.3rem;
+}
+#navbar::before{
+    content:"";
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    opacity: 0.4;
+    z-index: -1;
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+
+} #navbar ul li a:hover{
+    color: palegreen;
+    background-color: blueviolet;
+
+}
+.search{
+    display: flex;
+    align-items:center; 
+    margin: 0;
+}
+.search form{ 
+    display: flex;
+    margin: 0;
+}
+.search input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+     border-radius : 5px;
+    margin-right:10px ;
+    font-size: 16px;
+
+}
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     padding: 50px 400px;
+}
+#Home::before{   
+    content: "";
+    position: absolute;
+    height: 150vh;   
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+   background: url(https://cdn.pixabay.com/photo/2023/12/01/01/32/ai-generated-8422728_960_720.jpg);
+   background-position: center;
+   background-size: cover;
+}
+   .h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: cursive;
+    text-align: center;
+   }
+   .h-primary1{
+    margin-top: 300px;
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: cursive;
+    text-align: center;
+   }
+   #Home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 10px 10px 10px red;
+   }
+   .h-sec{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   #service{
+    display: flex;
+    margin: 34px;
+   }
+   #service .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color:brown;
+   }
+   #service .box img{
+    height: 156px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border-radius: 60px;
+   }
+    
+   #service .box:hover{
+    background-color: blueviolet;
+   }
+  #client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+      #client img{
+        height: 124px;
+
+      }
+      #client-sec::before{   
+        content: "";
+        position: absolute;
+        height: 40vh;   
+        width: 100%;
+        opacity: 0.4;
+        z-index: -1;
+       background: url("https://cdn.pixabay.com/photo/2019/03/18/06/46/binary-4062450_1280.jpg");
+       background-position: center;
+       background-size: cover;
+    }
+    #client-sec{
+        padding: 34px;
+    }
+    footer{
+        background-color:blue;
+        color: #ddd;
+        padding: 9px 20px;
+    }
+    
